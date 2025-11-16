@@ -5,5 +5,7 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 
 Initial Steps:
 
+![image_alt]()
+
 
 
