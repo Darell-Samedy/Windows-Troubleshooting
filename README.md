@@ -28,7 +28,7 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 
 - Retried to connect online, no luck.
 
-![image_alt]()
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/Screenshot%202025-11-12%20222103.png?raw=true)
 
 - Reran ipconfig /all and ping 8.8.8.8 once again, no luck again
 
