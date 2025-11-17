@@ -10,7 +10,7 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 
 - Performed nslookup to verify no connectivity 
 
-![image_alt]()
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/Screenshot%202025-11-15%20162343.png?raw=true)
 
 - Pinged the DNS for Google to verify once again
 
