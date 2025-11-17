@@ -6,7 +6,55 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 ![image_alt](https://github.com/Darell-Samedy/Security-Hardening-/blob/main/Screenshot%202025-11-12%20221722.png?raw=true)
 
 
-# Initial Steps: 
+# Verification Steps: 
+
+- Performed nslookup to verify no connectivity 
+
+![image_alt]()
+
+- Pinged the DNS for Google to verify once again
+
+![image_alt]()
+
+# Troubleshooting Steps:
+
+- Verified if VM network settings were correct. In this image, it is shown that the Network Adapter is not enabled.
+
+![image_alt]()
+
+- Now, we enable the network adapter and select the NAT network option for this current lab. 
+
+![image_alt]()
+
+- Retried to connect online, no luck.
+
+![image_alt]()
+
+- Reran ipconfig /all and ping 8.8.8.8 once again, no luck again
+
+![image_alt]()
+
+# Through PowerShell, I ran both:
+- netsh winsock reset
+- netsh int ip reset
+
+  To give the Windows internal network settings a "factory reset", then reboot the VM.
+
+# Temporarily set the DNS to 8.8.8.8
+
+![image_alt]()
+
+
+# 1 Final Test for connectivity, and complete.
+
+![image_alt]()
+
+
+
+
+
+
+
 
 
 
