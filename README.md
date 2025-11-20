@@ -48,7 +48,7 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 ![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/Screenshots/Screenshot%202025-11-17%20182301.png?raw=true)
 
 
-# TICKET #3: User TestLocal attempted to log in to the Windows 10 VM and received the following error:
+# TICKET #2: User TestLocal attempted to log in to the Windows 10 VM and received the following error:
 
 “We can’t sign in to your account. You’ve been signed in with a temporary profile.”
 
