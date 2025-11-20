@@ -48,6 +48,44 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 ![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/Screenshots/Screenshot%202025-11-17%20182301.png?raw=true)
 
 
+# TICKET #3: User TestLocal attempted to log in to the Windows 10 VM and received the following error:
+
+“We can’t sign in to your account. You’ve been signed in with a temporary profile.”
+
+The user could not access their desktop, documents, or application settings.
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20182619.png?raw=true)
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20182716.png?raw=true)
+
+# Root Cause: Windows could not load the user profile because the original NTUSER.DAT file was missing, leaving the system to create a temporary profile. The registry .bak key pointed to the original profile folder that could not be loaded. 
+
+# Opened the Profile List under the registry and noticed that when the user tried to log in, it had created a temporary file, and the original file
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20183319.png?raw=true)
+
+# Renamed the TestLocal to TestLocal_old to preserve the original data and proceeded to delete the .bak file
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20183621.png?raw=true)
+
+# Changed the RefCount and StateCount both to 0 for system resources reset
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20183912.png?raw=true)
+
+# User attempted login and was successful!
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20190537.png?raw=true)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
