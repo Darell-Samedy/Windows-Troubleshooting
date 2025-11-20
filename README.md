@@ -20,7 +20,7 @@ Ticket #1 - User reported that the Windows 10 VM could not access the internet. 
 
 - Verified if VM network settings were correct. In this image, it is shown that the Network Adapter is not enabled.
 
-![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/Screenshot%202025-11-12%20221647.png?raw=true)
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/Screenshots/Screenshot%202025-11-12%20221647.png?raw=true)
 
 - Now, we enable the network adapter and select the NAT network option for this current lab. 
 
