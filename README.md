@@ -76,6 +76,31 @@ The user could not access their desktop, documents, or application settings.
 
 ![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/TEMP%20ACC%20SCREENSHOTS/Screenshot%202025-11-19%20190537.png?raw=true)
 
+# TICKET 4: User reported that the Windows 10 VM experienced slow startup and sluggish performance. Applications took unusually long to open, and the desktop was unresponsive for several minutes after login.
+
+- Checked the event viewer for boot time start-ups and noticed multiple critical messages and warnings.
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20193159.png?raw=true)
+
+- Checked the event viewer once again and observed the system section under Windows Logs and noticed once again multiple errors.
+
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20193700.png?raw=true)
+
+- Application Logs did not have much, minimal errors
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20193740.png?raw=true)
+
+- Began a Disk Cleanup to remove unnecessary files, possibly causing the slow start
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20193816.png?raw=true)
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20193902.png?raw=true)
+
+- Ran a system file repair using elevated PowerShell/CMD and found corrupt files and safely removed them
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20194735.png?raw=true)
+![image_alt](https://github.com/Darell-Samedy/Windows-Troubleshooting/blob/main/SLOWSTART%20SCREENSHOTS/Screenshot%202025-11-19%20195824.png?raw=true)
+
+Outcome: 
+
+Bootup time reduced from 5 minutes to 1 minute.
+Applications open promptly at login
+System resource usage optimized. 
 
 
 
